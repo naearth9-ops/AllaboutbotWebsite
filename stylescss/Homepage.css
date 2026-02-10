@@ -46,10 +46,10 @@ body{
 .items-menu .Signup{
     margin-left: auto;
 }
-.Signup a{
+.Signin a{
     color: black;
 }
-.Signup a:hover{
+.Signin a:hover{
     color: grey;
     text-decoration: underline;
     opacity: 0.8;

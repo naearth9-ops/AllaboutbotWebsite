@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:black;
+    color: white;
+}
+
+.login-container{
+    background-color: black;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 2px 2px 30px 4px skyblue;
+}
+.login-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.input-group input{
+    background-color: transparent;
+}
+
+#username{
+    border-radius: 10px;
+    width: 400px;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    color: #ffffff;
+}
+#password{
+    border-radius: 10px;
+    width: 400px;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    color: #ffffff;
+}
+.rememberme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remember-register{
+    margin-top: 30px;
+}
+button{
+    border-radius: 15px;
+    width: 450px;
+    margin-top: 50px;
+    height: 3.5rem;
+}
+button:hover{
+    opacity: 0.9;
+    box-shadow: 1px 1px 15px 1px grey;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+}
