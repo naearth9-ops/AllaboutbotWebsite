@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 18px;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Top-Bar */
+.container-topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: sky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.items-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+}
+.items-menu a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.items-menu a:hover{
+    color: grey;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+.items-menu img{
+    width: 160px;
+    height: auto;
+}
+.items-menu .Signup{
+    margin-left: auto;
+}
+.Signup a{
+    color: black;
+}
+.Signup a:hover{
+    color: grey;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* hoover */
+.hoover-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+    width: 85%;
+    height: 80vh;
+    margin:0 auto;
+    position: center;
+    border-radius: 50px;
+}
+
+/* ซ้าย */
+.hoover-content {
+    max-width: 40%;
+}
+
+.recommended {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+.brand {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #000;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    text-decoration: none;
+    background-color: grey;
+}
+
+/* ขวา */
+.hoover-picture {
+    width: 80%;
+    padding-left: 10rem;
+}
+
+.hoover-picture img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* misterclean */
+.misterclean-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 85%;
+    height: 80vh;
+    margin: 0 auto;
+
+    padding: 4rem;
+    gap: 3rem;
+}
+/* ซ้าย */
+.misterclean-picture {
+    width: 50%;
+    padding-left: 13rem;
+}
+
+.misterclean-picture img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ขวา */
+.misterclean-content {
+    max-width: 40%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* autobot */
+.Autobot-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
+    width: 85%;
+    height: 80vh;
+    margin:0 auto;
+    position: center;
+    border-radius: 50px;
+}
+
+/* ซ้าย */
+.Autobot-content {
+    max-width: 40%;
+    max-height: 120%;
+}
+
+/* ขวา */
+.Autobot-picture {
+    width: 150%;    
+    margin-right: 10rem;
+}
+
+.Autobot-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* media query */
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+}
+
+/*DESKTOP ใหญ่มาก (1440px ขึ้นไป) */
+
+@media (min-width: 1440px) {
+
+    .hoover-container,
+    .misterclean-container,
+    .Autobot-container {
+        width: 80%;
+    }
+
+    .hoover-picture img,
+    .misterclean-picture img,
+    .Autobot-picture img {
+        width: 65%;
+    }
+}
+
+/* iPad Air / Tablet กลาง (769px – 900px) */
+@media (min-width: 769px) and (max-width: 900px) {
+
+    .hoover-container,
+    .misterclean-container,
+    .Autobot-container {
+        width: 95%;
+        padding: 3rem;
+        height: auto;
+    }
+
+    /* รูป */
+    .hoover-picture,
+    .misterclean-picture,
+    .Autobot-picture {
+        width: 50%;
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hoover-picture img,
+    .misterclean-picture img,
+    .Autobot-picture img {
+        width: 90%;
+        max-width: 380px; /* ตัวนี้แหละที่ช่วยชีวิต */
+        height: auto;
+    }
+
+    /* ข้อความ */
+    .hoover-content,
+    .misterclean-content,
+    .Autobot-content {
+        max-width: 45%;
+    }
+}
+
+
+/*TABLET แนวตั้ง / MOBILE ใหญ่ (600px – 767px) */
+@media (max-width: 767px) {
+
+    .hoover-container,
+    .misterclean-container,
+    .Autobot-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .hoover-content,
+    .misterclean-content,
+    .Autobot-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hoover-picture,
+    .misterclean-picture,
+    .Autobot-picture {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hoover-picture img,
+    .misterclean-picture img,
+    .Autobot-picture img {
+        width: 75%;
+    }
+}
+
+
+/*MOBILE ปกติ (375px – 599px) */
+
+@media (max-width: 599px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .brand {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hoover-picture img,
+    .misterclean-picture img,
+    .Autobot-picture img {
+        width: 85%;
+    }
+
+    .items-menu {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* MOBILE เล็กมาก (ต่ำกว่า 375px) */
+@media (max-width: 374px) {
+
+    .brand {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .hoover-container,
+    .misterclean-container,
+    .Autobot-container {
+        padding: 1.5rem;
+    }
+
+    .hoover-picture img,
+    .misterclean-picture img,
+    .Autobot-picture img {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-topbar {
+        padding: 12px 16px;
+    }
+
+    .items-menu {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .items-menu img {
+        width: 120px;
+    }
+
+    .items-menu a {
+        font-size: 16px;
+    }
+
+    .Signup,
+    .items-menu .Signup {
+        margin-left: 0;
+        align-self: center;
+    }
+}
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .items-menu .item,
+    .items-menu .Signup {
+        display: none; /* ซ่อนเมนู */
+    }
+
+    .items-menu.active .item,
+    .items-menu.active .Signup {
+        display: block;
+    }
+
+    .items-menu.active {
+        gap: 1rem;
+    }
+}
+/* FIX hamburger position */
+@media (max-width: 768px) {
+
+    .items-menu {
+        flex-direction: row;              
+        justify-content: space-between;   /
+        align-items: center;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;             
+    }
+}
+/* ================= FIX iPad ONLY ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* กัน container ล้น */
+    .hoover-container,
+    .misterclean-container,
+    .Autobot-container {
+        width: 95%;
+        height: auto;
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    /* ลด gap เมนู */
+    .items-menu {
+        gap: 2.5rem;
+    }
+
+    /* ---------- รูป ---------- */
+    .hoover-picture,
+    .misterclean-picture,
+    .Autobot-picture {
+        width: 50%;
+        padding-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hoover-picture img,
+    .misterclean-picture img,
+    .Autobot-picture img {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* ---------- ข้อความ ---------- */
+    .hoover-content,
+    .misterclean-content,
+    .Autobot-content {
+        max-width: 45%;
+    }
+}
+/* ================= FIX Autobot size on iPad ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .Autobot-picture {
+        width: 60%;              
+    }
+
+    .Autobot-picture img {
+        max-width: 520px;        
+        width: 100%;
+    }
+}
+/* ================= REAL FIX : Autobot ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* เจาะเฉพาะ hoover-container ตัวที่มี Autobot */
+    .hoover-container .Autobot-picture {
+        width: 65%;
+        margin-right: 0;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hoover-container .Autobot-picture img {
+        width: 100%;
+        max-width: 520px;   
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hoover-container .Autobot {
+        max-width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
