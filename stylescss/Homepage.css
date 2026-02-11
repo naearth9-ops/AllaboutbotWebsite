@@ -20,7 +20,7 @@ body{
     align-items: center;
     padding: 0 24px;
     background-color: sky;
-    position: sticky;
+    position: absolute;
     top: 0;
     z-index: 1000;
 }

@@ -99,8 +99,10 @@ a#no-account:hover{
 button{
     border-radius: 15px;
     width: 450px;
-    margin-top: 50px;
+    margin-top: 30px;
     height: 3.5rem;
+    font-size: 18px;
+    font-weight: 600;
 }
 button:hover{
     opacity: 0.9;
@@ -131,6 +133,13 @@ a:hover{
 a#Sign-in:hover{
     color: #00e5ff;
     text-shadow: 0 0 6px rgba(0,229,255,0.7);
+}
+p#register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin-top: 15px;
 }
 
 /* pop-up */
